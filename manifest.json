@@ -1,0 +1,10 @@
+{
+	"id": "uebp-renderer",
+	"name": "Unreal Engine Blueprint Renderer",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Render Unreal Engine Blueprint nodes in your Obsidian notes.",
+	"author": "kisspread",
+	"authorUrl": "https://github.com/kisspread",
+	"isDesktopOnly": false
+}

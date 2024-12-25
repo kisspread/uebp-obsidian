@@ -1,0 +1,57 @@
+/* Import resource styles */
+@import 'resources/render.css';
+@import 'resources/copy-button.css';
+
+/* Error styles */
+.uebp-error {
+    color: #ff5555;
+    padding: 1em;
+    border: 1px solid #ff5555;
+    border-radius: 4px;
+    margin: 1em 0;
+    background-color: rgba(255, 85, 85, 0.1);
+}
+
+.bue-render {
+    position: relative;
+}
+
+.bue-copy-button {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    z-index: 1;
+    padding: 0.4rem;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-normal);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+
+    &:hover {
+        background-color: var(--background-primary-alt);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+
+    &.copied {
+        background-color: var(--interactive-success);
+        border-color: var(--interactive-success);
+        color: white;
+
+        &:hover {
+            background-color: var(--interactive-success);
+        }
+    }
+}
